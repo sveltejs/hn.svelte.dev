@@ -42,6 +42,7 @@
 
 <svelte:head>
 	<title>Svelte Hacker News</title>
+	<meta name="description" content="Latest Hacker News stories in the {list} category">
 </svelte:head>
 
 {#each items as item, i}
