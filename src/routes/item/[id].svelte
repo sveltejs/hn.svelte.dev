@@ -19,9 +19,13 @@
 	}
 
 	.item {
-		border-bottom: 1em solid #f4f4f4;
+		border-bottom: 1em solid rgba(0,0,0,0.1);
 		margin: 0 -2em 2em -2em;
 		padding: 0 2em 2em 2em;
+	}
+
+	:global(html).dark .item {
+		border-bottom: 1em solid rgba(255,255,255,0.1);;
 	}
 
 	.main-link {
@@ -37,12 +41,16 @@
 	.meta {
 		font-size: 0.8em;
 		font-weight: 300;
-		color: #666;
+		color: var(--fg-light);
+	}
+
+	.comments > :global(.comment):first-child {
+		border-top: none;
 	}
 </style>
 
 <svelte:head>
-	 <title>{item.title} | Svelte Hacker News</title>
+	<title>{item.title} | Svelte Hacker News</title>
 </svelte:head>
 
 <div>

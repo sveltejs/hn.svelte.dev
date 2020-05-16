@@ -4,8 +4,12 @@
 
 <style>
 	.comment {
-		border-top: 1px solid #eee;
+		border-top: 1px solid rgba(0,0,0,0.1);
 		padding: 1em 0 0 0;
+	}
+
+	:global(html).dark .comment {
+		border-top: 1px solid rgba(255,255,255,0.1);;
 	}
 
 	.comment .children {
@@ -25,12 +29,12 @@
 	.meta {
 		display: block;
 		font-size: 14px;
-		color: #666;
+		color: var(--fg-light);
 		margin: 0 0 1em 0;
 	}
 
 	a {
-		color: #666;
+		color: var(--fg-light);
 	}
 
 	/* prevent crazy overflow layout bug on mobile */

@@ -22,6 +22,7 @@
 		height: 4px;
 		z-index: 999;
 	}
+
 	.progress {
 		position: absolute;
 		left: 0;
@@ -30,6 +31,7 @@
 		background-color: #ff6600;
 		transition: width 0.4s;
 	}
+
 	.fade {
 		position: fixed;
 		width: 100%;
@@ -39,6 +41,11 @@
 		z-index: 998;
 		animation: fade 0.4s;
 	}
+
+	:global(html).dark .fade {
+		background-color: rgba(0,0,0,0.3);
+	}
+
 	@keyframes fade {
 		from { opacity: 0 }
 		to { opacity: 1 }

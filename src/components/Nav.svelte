@@ -6,7 +6,7 @@
 	nav {
 		/* background-color: rgba(255, 102, 0, 0.05); */
 		border-bottom: 1px solid #ff6600;
-		color: #666;
+		color: var(--fg-light);
 		font-weight: 300;
 		padding: 0 1em;
 	}
@@ -46,7 +46,7 @@
 	.selected {
 		position: relative;
 		display: inline-block;
-		color: #333;
+		color: var(--fg);
 	}
 
 	.selected::after {
