@@ -41,6 +41,10 @@
 	.body :global(*) {
 		overflow-wrap: break-word;
 	}
+
+	.comment :global(pre) {
+		overflow-x: auto;
+	}
 </style>
 
 {#if !comment.deleted}
