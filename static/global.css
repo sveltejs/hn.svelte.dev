@@ -20,6 +20,12 @@ body {
 	transition: background-color 0.6s;
 }
 
+@media (prefers-reduced-motion: reduce) {
+	body {
+		transition: none;
+	}
+}
+
 h1, h2, h3, h4, h5, h6 {
 	margin: 0 0 0.5em 0;
 	font-weight: 400;
