@@ -14,7 +14,7 @@
 		font-size: 1em;
 		font-weight: 500;
 		margin: 0 0 0.5em 0;
-		color: #333;
+		color: var(--fg);
 	}
 
 	h2 a {
@@ -23,13 +23,13 @@
 
 	p {
 		font-size: 0.8em;
-		color: #666;
+		color: var(--fg-light);
 		margin: 0;
 		font-weight: 300;
 	}
 
 	small {
-		color: #666;
+		color: var(--fg-light);
 		font-weight: 300;
 	}
 
@@ -37,7 +37,7 @@
 		position: absolute;
 		font-size: 1.6em;
 		font-weight: 200;
-		color: #666;
+		color: var(--fg-light);
 		left: 0.2em;
 		top: 0;
 		text-align: right;
