@@ -27,7 +27,7 @@ npm run dev -- --open
 To build a production version...
 
 ```
-npm run sapper
+npm run build
 ```
 
 ...then follow the instructions to serve the app.
