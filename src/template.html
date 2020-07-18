@@ -8,7 +8,7 @@
 	<script>
 		try {
 			if (!('theme' in localStorage)) {
-				localStorage.theme = window.matchMedia('(prefers-color-scheme: dark)')
+				localStorage.theme = window.matchMedia('(prefers-color-scheme: dark)').matches
 					? 'dark'
 					: 'light';
 			}
