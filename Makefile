@@ -7,7 +7,7 @@ IMAGE := gcr.io/$(PROJECT)/$(SERVICE):$(HASH)
 
 sapper:
 	@echo "\n~> building Sapper app"
-	@npm run sapper
+	@npm run build
 
 
 docker:
