@@ -12,9 +12,9 @@ sapper:
 
 docker:
 	@echo "\n~> building docker image"
-	@gcloud builds submit -t $(IMAGE)
+	@gcloud builds submit --project $(PROJECT) -t $(IMAGE)
 
 
 deploy: sapper docker
 	@echo "\n~> deploying $(SERVICE) to Cloud Run servers"
-	@gcloud beta run deploy $(SERVICE) --allow-unauthenticated --region us-central1 --image $(IMAGE) --memory=512Mi --platform=managed
+	@gcloud run deploy $(SERVICE) --project $(PROJECT) --allow-unauthenticated --region us-central1 --image $(IMAGE) --memory=512Mi --platform=managed
