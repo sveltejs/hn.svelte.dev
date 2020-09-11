@@ -13,7 +13,7 @@
   },
   "dependencies": {
     "@polka/send": "^0.4.0",
-    "node-fetch": "^2.6.0",
+    "node-fetch": "^2.6.1",
     "polka": "^0.5.2",
     "sirv": "^1.0.0"
   },
