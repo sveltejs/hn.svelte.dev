@@ -1,3 +1,3 @@
 module.exports = {
-	adapter: '@sveltejs/adapter-node'
+	adapter: '@sveltejs/adapter-netlify'
 };
