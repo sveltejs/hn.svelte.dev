@@ -1,5 +1,4 @@
 import fetch from 'node-fetch';
-import send from '@polka/send';
 
 const render = (list, items) => `<?xml version="1.0" encoding="UTF-8" ?>
 <rss version="2.0">
@@ -37,9 +36,12 @@ export function get(req, res) {
 		.then(r => r.json())
 		.then(items => {
 			const feed = render(list, items);
-			send(res, 200, feed, {
-				'Cache-Control': `max-age=0, s-max-age=${600}`, // 10 minutes
-				'Content-Type': 'application/rss+xml'
-			});
+			return {
+				body: feed,
+				headers: {
+					'Cache-Control': `max-age=0, s-max-age=${600}`, // 10 minutes
+					'Content-Type': 'application/rss+xml'
+				}
+			};
 		});
 }

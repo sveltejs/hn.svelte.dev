@@ -48,7 +48,7 @@
 
 <article>
 	<h2>
-		<a href='{item.domain ? item.url : `/item/${item.id}` }'>{item.title} {#if item.domain}<small>({item.domain})</small>{/if}</a>
+		<a href={item.domain ? item.url : `/item/${item.id}`}>{item.title} {#if item.domain}<small>({item.domain})</small>{/if}</a>
 	</h2>
 
 	{#if item.type === 'job'}
@@ -56,10 +56,10 @@
 	{:else}
 		<p>
 			{item.points} points by
-			<a rel='prefetch' href='user/{item.user}'>{item.user}</a> {item.time_ago}
-			 | <a rel='prefetch' href='item/{item.id}'>{item.comments_count} {item.comments_count === 1 ? 'comment' : 'comments'}</a>
+			<a rel="prefetch" href="/user/{item.user}">{item.user}</a> {item.time_ago}
+			 | <a rel="prefetch" href="/item/{item.id}">{item.comments_count} {item.comments_count === 1 ? 'comment' : 'comments'}</a>
 		</p>
 	{/if}
 
-	<span class='index'>{index}</span>
+	<span class="index">{index}</span>
 </article>

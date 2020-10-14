@@ -9,6 +9,18 @@
 	const message = offline ? 'Find the internet and try again' : error.message;
 </script>
 
+<svelte:head>
+	<title>{title}</title>
+</svelte:head>
+
+<h1>{title}</h1>
+
+<p>{message}</p>
+
+{#if dev && error.stack}
+	<pre>{error.stack}</pre>
+{/if}
+
 <style>
 	h1, p {
 		margin: 0 auto;
@@ -30,15 +42,3 @@
 		}
 	}
 </style>
-
-<svelte:head>
-	<title>{title}</title>
-</svelte:head>
-
-<h1>{title}</h1>
-
-<p>{message}</p>
-
-{#if dev && error.stack}
-	<pre>{error.stack}</pre>
-{/if}

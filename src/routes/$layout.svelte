@@ -1,8 +1,8 @@
 <script>
-	import { stores } from '@sapper/app';
-	import Nav from '../components/Nav.svelte';
-	import PreloadingIndicator from '../components/PreloadingIndicator.svelte';
-	import ThemeToggler from '../components/ThemeToggler.svelte';
+	import { stores } from '/_app/main/client';
+	import Nav from '/_app/components/Nav.svelte';
+	import PreloadingIndicator from '/_app/components/PreloadingIndicator.svelte';
+	import ThemeToggler from '/_app/components/ThemeToggler.svelte';
 
 	export let segment;
 

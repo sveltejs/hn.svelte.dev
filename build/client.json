@@ -1,0 +1,68 @@
+{
+  "entry": "entry-a0edd884.js",
+  "deps": {
+    "__entry__": {
+      "js": [
+        "entry-a0edd884.js",
+        "client-c5ca0578.js",
+        "inject_styles-cd877ae9.js"
+      ],
+      "css": [
+        "client-7f318317.css",
+        "entry.css"
+      ]
+    },
+    "index": {
+      "js": [
+        "index-f8511177.js",
+        "client-c5ca0578.js",
+        "inject_styles-cd877ae9.js"
+      ],
+      "css": [
+        "client-7f318317.css"
+      ]
+    },
+    "about": {
+      "js": [
+        "about-d0d96b20.js",
+        "client-c5ca0578.js",
+        "inject_styles-cd877ae9.js"
+      ],
+      "css": [
+        "client-7f318317.css"
+      ]
+    },
+    "item_$id": {
+      "js": [
+        "[id]-b62046ea.js",
+        "client-c5ca0578.js",
+        "inject_styles-cd877ae9.js"
+      ],
+      "css": [
+        "client-7f318317.css",
+        "[id]-42a0ec3b.css"
+      ]
+    },
+    "user_$name": {
+      "js": [
+        "[name]-eb81c070.js",
+        "client-c5ca0578.js",
+        "inject_styles-cd877ae9.js"
+      ],
+      "css": [
+        "client-7f318317.css"
+      ]
+    },
+    "$list$93_$91page": {
+      "js": [
+        "[page]-bc200ebb.js",
+        "client-c5ca0578.js",
+        "inject_styles-cd877ae9.js"
+      ],
+      "css": [
+        "client-7f318317.css",
+        "[page]-3755aac1.css"
+      ]
+    }
+  }
+}
