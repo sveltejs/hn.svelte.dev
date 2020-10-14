@@ -1,1 +1,0 @@
-{"version":3,"file":"route_rss.js","sources":["../../../unoptimized/server/_app/routes/rss.js"],"sourcesContent":["export function get(req, res) {\n\tres.redirect('/top/rss');\n}"],"names":["req","res","redirect"],"mappings":"gFAAO,SAAaA,EAAKC,GACxBA,EAAIC,SAAS"}
