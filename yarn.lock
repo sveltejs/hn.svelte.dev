@@ -119,12 +119,13 @@
     rollup-plugin-svelte "^6.0.0"
     svelte-hmr "^0.11.2-1"
 
-"@sveltejs/adapter-netlify@^0.0.1":
-  version "0.0.1"
-  resolved "https://registry.yarnpkg.com/@sveltejs/adapter-netlify/-/adapter-netlify-0.0.1.tgz#28485d39feb638d3cb0511c88e9706ee8f1c26eb"
-  integrity sha512-llxLsJXq4o6NN/i6AYgm7PRIPeoI8bWSKGSQyWAD2jqs+XNdSWWnmSnh7xb9O6F486WFw4jFtnO+KjS7kyUfCw==
+"@sveltejs/adapter-netlify@^0.0.2":
+  version "0.0.2"
+  resolved "https://registry.yarnpkg.com/@sveltejs/adapter-netlify/-/adapter-netlify-0.0.2.tgz#470862f72461c3476b45a821f3edc32ee54fa167"
+  integrity sha512-y+ZbH/oQLk8GXkjXEbVQu3CLf2bJHRFcNH5YDs7A74ivpIGsG1ow54zikPRHgFIEHuxO6B9Yplda2FsEe//xyg==
   dependencies:
     kleur "^4.1.3"
+    tiny-glob "^0.2.6"
     toml "^3.0.0"
 
 "@sveltejs/adapter-node@0.0.3":
@@ -636,6 +637,16 @@ glob@^7.1.3, glob@^7.1.4, glob@^7.1.6:
     minimatch "^3.0.4"
     once "^1.3.0"
     path-is-absolute "^1.0.0"
+
+globalyzer@^0.1.0:
+  version "0.1.4"
+  resolved "https://registry.yarnpkg.com/globalyzer/-/globalyzer-0.1.4.tgz#bc8e273afe1ac7c24eea8def5b802340c5cc534f"
+  integrity sha512-LeguVWaxgHN0MNbWC6YljNMzHkrCny9fzjmEUdnF1kQ7wATFD1RHFRqA1qxaX2tgxGENlcxjOflopBwj3YZiXA==
+
+globrex@^0.1.1:
+  version "0.1.2"
+  resolved "https://registry.yarnpkg.com/globrex/-/globrex-0.1.2.tgz#dd5d9ec826232730cd6793a5e33a9302985e6098"
+  integrity sha512-uHJgbwAMwNFf5mLst7IWLNg14x1CkeqglJb/K3doi4dw6q2IvAAmM/Y81kevy83wP+Sst+nutFTYOGg3d1lsxg==
 
 has-ansi@^2.0.0:
   version "2.0.0"
@@ -1482,6 +1493,14 @@ terser@^5.0.0:
     commander "^2.20.0"
     source-map "~0.7.2"
     source-map-support "~0.5.19"
+
+tiny-glob@^0.2.6:
+  version "0.2.6"
+  resolved "https://registry.yarnpkg.com/tiny-glob/-/tiny-glob-0.2.6.tgz#9e056e169d9788fe8a734dfa1ff02e9b92ed7eda"
+  integrity sha512-A7ewMqPu1B5PWwC3m7KVgAu96Ch5LA0w4SnEN/LbDREj/gAD0nPWboRbn8YoP9ISZXqeNAlMvKSKoEuhcfK3Pw==
+  dependencies:
+    globalyzer "^0.1.0"
+    globrex "^0.1.1"
 
 to-regex-range@^5.0.1:
   version "5.0.1"
