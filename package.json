@@ -16,6 +16,7 @@
     "svelte": "^3.0.0"
   },
   "dependencies": {
+    "encoding": "^0.1.13",
     "node-fetch": "^2.6.1"
   }
 }
