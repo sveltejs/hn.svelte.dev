@@ -1,7 +1,8 @@
 module.exports = {
 	install: ['svelte'],
 	plugins: [
-		['@snowpack/plugin-svelte', {
+		// just until new version of @snowpack/plugin-svelte is released
+		['./hack/snowpack-plugin', {
 			hydratable: true
 		}]
 	],
