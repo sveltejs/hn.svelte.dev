@@ -119,10 +119,10 @@
     rollup-plugin-svelte "^6.0.0"
     svelte-hmr "^0.11.2-1"
 
-"@sveltejs/adapter-netlify@^0.0.5":
-  version "0.0.5"
-  resolved "https://registry.yarnpkg.com/@sveltejs/adapter-netlify/-/adapter-netlify-0.0.5.tgz#9142f3bf0922b66bd5e80869378e55f526449b2a"
-  integrity sha512-BTqh2XWIDp+t+M9o15aNrfcY0/cWcJ6BGpP6kliIc4VufcDRzrWRJUbAS7h55vf1PTxQtfuw7kZr0Ayk2YVkHg==
+"@sveltejs/adapter-netlify@^0.0.6":
+  version "0.0.6"
+  resolved "https://registry.yarnpkg.com/@sveltejs/adapter-netlify/-/adapter-netlify-0.0.6.tgz#214cf6c827fcdc4ff980a4476ac491d26e7379ff"
+  integrity sha512-dXb0geld9oeEoFEc/hG1/Oobh/njr70lVqIcBAIiDa06/XxsSGheY2zdFyBf5b5PxVO4M54wc2MLXw3dMn0wLw==
   dependencies:
     kleur "^4.1.3"
     tiny-glob "^0.2.6"
