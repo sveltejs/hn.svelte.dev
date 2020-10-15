@@ -1,3 +1,7 @@
+<script context="module">
+	export const prerender = true;
+</script>
+
 <script>
 	import { stores } from '/_app/main/client';
 	import Nav from '/_app/components/Nav.svelte';
