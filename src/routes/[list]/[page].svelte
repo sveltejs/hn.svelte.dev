@@ -47,10 +47,10 @@
 
 {#each items as item, i}
 	{#if item} <!-- sometimes we get bad data? TODO investigate -->
-		<ItemSummary item='{item}' index='{start + i}'/>
+		<ItemSummary {item} index={start + i}/>
 	{/if}
 {/each}
 
 {#if next}
-	<a class='more' href='{next}'>More...</a>
+	<a class="more" href={next}>More...</a>
 {/if}

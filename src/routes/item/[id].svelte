@@ -54,20 +54,20 @@
 </svelte:head>
 
 <div>
-	<article class='item'>
-		<a class='main-link' href='{item.url}'>
+	<article class="item">
+		<a class="main-link" href={item.url}>
 			<h1>{item.title}</h1>
 			{#if item.domain}<small>{item.domain}</small>{/if}
 		</a>
 
-		<p class='meta'>{item.points} points by <a href='user/{item.user}'>{item.user}</a> {item.time_ago}</p>
+		<p class="meta">{item.points} points by <a href="/user/{item.user}">{item.user}</a> {item.time_ago}</p>
 
 		{#if item.content}
 			{@html item.content}
 		{/if}
 	</article>
 
-	<div class='comments'>
+	<div class="comments">
 		{#each item.comments as comment}
 			<Comment comment='{comment}'/>
 		{/each}

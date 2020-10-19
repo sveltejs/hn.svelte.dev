@@ -5,17 +5,17 @@
 </script>
 
 {#if !comment.deleted}
-	<article class='comment' class:hidden>
+	<article class="comment" class:hidden>
 		<div class="meta-bar" on:click="{() => hidden = !hidden}">
-			<span class='meta'><a rel='prefetch' href='user/{comment.user}'>{comment.user}</a> {comment.time_ago}</span>
+			<span class="meta"><a rel="prefetch" href="/user/{comment.user}">{comment.user}</a> {comment.time_ago}</span>
 		</div>
 
-		<div class='body'>
+		<div class="body">
 			{@html comment.content}
 		</div>
 
 		{#if comment.comments.length > 0}
-			<ul class='children'>
+			<ul class="children">
 				{#each comment.comments as child}
 					<li><svelte:self comment='{child}'/></li>
 				{/each}
