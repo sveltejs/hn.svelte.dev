@@ -28,13 +28,13 @@
 	<p>...joined <strong>{user.created}</strong>, and has <strong>{user.karma}</strong> karma</p>
 
 	<p>
-		<a href='https://news.ycombinator.com/submitted?id={user.id}'>submissions</a> /
-		<a href='https://news.ycombinator.com/threads?id={user.id}'>comments</a> /
-		<a href='https://news.ycombinator.com/favorites?id={user.id}'>favourites</a>
+		<a href="https://news.ycombinator.com/submitted?id={user.id}">submissions</a> /
+		<a href="https://news.ycombinator.com/threads?id={user.id}">comments</a> /
+		<a href="https://news.ycombinator.com/favorites?id={user.id}">favourites</a>
 	</p>
 
 	{#if user.about}
-		<div class='about'>
+		<div class="about">
 			{@html '<p>' + user.about }
 		</div>
 	{/if}

@@ -79,15 +79,15 @@
 </style>
 
 <nav>
-	<img alt="Svelte Hacker News logo" class="icon" src="favicon.png">
+	<img alt="Svelte Hacker News logo" class="icon" src="/favicon.png">
 
 	<ul>
-		<li><a rel="prefetch" class='{segment === "top" ? "selected" : ""}' href='top/1'>top</a></li>
-		<li><a rel="prefetch" class='{segment === "new" ? "selected" : ""}' href='new/1'>new</a></li>
-		<li><a rel="prefetch" class='{segment === "show"? "selected" : ""}' href='show/1'>show</a></li>
-		<li><a rel="prefetch" class='{segment === "ask" ? "selected" : ""}' href='ask/1'>ask</a></li>
-		<li><a rel="prefetch" class='{segment === "jobs" ? "selected" : ""}' href='jobs/1'>jobs</a></li>
+		<li><a rel="prefetch" href="/top/1" class:selected={segment === "top"}>top</a></li>
+		<li><a rel="prefetch" href="/new/1" class:selected={segment === "new"}>new</a></li>
+		<li><a rel="prefetch" href="/show/1" class:selected={segment === "show"}>show</a></li>
+		<li><a rel="prefetch" href="/ask/1" class:selected={segment === "ask"}>ask</a></li>
+		<li><a rel="prefetch" href="/jobs/1" class:selected={segment === "jobs"}>jobs</a></li>
 
-		<li class='about'><a rel="prefetch" class='{segment === "about" ? "selected" : ""}' href='about'>about</a></li>
+		<li class="about"><a rel="prefetch" href="/about" class:selected={segment === "about"}>about</a></li>
 	</ul>
 </nav>
